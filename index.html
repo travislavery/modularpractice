@@ -1,21 +1,89 @@
 <!DOCTYPE html>
-
 <html lang='en'>
+
 <head>
 	<link rel='stylesheet' href='./css/main.css'>
 	<meta charset='UTF-8'>
-	<script src='/node_modules/phaser/build/phaser.js'></script>
-	<script src='/js/boot.js'></script>
-	<script src='/js/load.js'></script>
-	<script src='/js/title.js'></script>
-	<script src='/js/play.js'></script>
-	<script src='/js/platform.js'></script>
-	<script src='/js/flappyCorg.js'></script>
-	<script src='/js/game.js'></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>Game</title>
 </head>
 <body>
-	<div id='gameDiv'></div>
+	<div id='gameDiv'><img src="/bubble-07.jpg" width="200" height="200"></div>
+	<div id="peopleModule">
+		<h1>People</h1>
+		<input placeholder="name" type="text">
+		<button id="addPerson">Add Person</button>
+		<ul id="people">
+			<script id="people-template" type="text/template">
+				{{#people}}
+					<li>
+						<span>{{.}}</span>
+						<i class="del">X</i>
+					</li>
+				{{/people}}
+			</script>
+		</ul>
+	</div>
+	<div id="colors">
+		<ul id="boxes">
+			<script id="boxes-template" type="text/template">
+				{{#boxes}}
+					<li>
+						<span>{{.}}</span>
+					</li>
+				{{/boxes}}
+			</script>
+		</ul>
+		<div id="greenDiv" class="box">
+			<p class="xButton" >X</p>
+			<img src="/bubble-07.jpg" width="100" height="100">
+			<div>
+				<h3>Properties</h3>
+				<p></p>
+			</div>
+		</div>
+		<div id="blueDiv" class="box">
+			<p class="xButton" >X</p>
+			<img src="/bubble-07.jpg" width="100" height="100">
+			<div>
+				<h3>Properties</h3>
+				<p></p>
+			</div>
+		</div>
+		<div id="redDiv" class="box"> 
+			<p class="xButton">X</p>
+			<img src="/bubble-07.jpg" width="100" height="100">
+			<div>
+				<h3>Properties</h3>
+				<p></p>
+			</div>
+		</div>
+		<div id="blackDiv" class="box">
+			<p class="xButton" >X</p>
+			<img src="/bubble-07.jpg" width="100" height="100">
+			<div>
+				<h3>Properties</h3>
+				<p>words</p>
+			</div>
+		</div>
+		<div id="purpleDiv" class="box">
+			<p class="xButton" >X</p>
+			<img src="/bubble-07.jpg" width="100" height="100">
+			<div>
+				<h3>Properties</h3>
+				<p></p>
+			</div>
+		</div>
+		<div id="orangeDiv" class="box">
+			<p class="xButton" >X</p>
+			<img src="/bubble-07.jpg" width="100" height="100">
+			<div>
+				<h3>Properties</h3>
+				<p></p>
+			</div>
+		</div>
+
+	</div>
 </body>	
+<script src='/js/boot.js'></script>
 </html>

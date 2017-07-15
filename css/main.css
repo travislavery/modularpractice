@@ -1,18 +1,123 @@
 * {
-	background-color: black;
+	background-color: white;
 	text-align: center;
-	overflow: auto;
 }
 body {
-	margin: 0px;
+	margin: 10px;
 }
 #gameDiv {
-	width: document.window.width;
-	height: document.window.height;
-	margin: auto;
-	display: flex;
-	resize: both;
-	overflow:auto;
 	text-align: center;
-	vertical-align: top;
+	width: document.window.width;
+	height: 200px;
+	margin: auto;
+	text-align: center;
+}
+
+span {
+	width: 50px;
+	height: 20px;
+	margin: auto;
+	background-color: blue;
+}
+
+#colors {
+	width: 1600px;
+	height: 1000px;
+	text-align: center;
+	margin: auto;
+	display:block;
+	
+
+}
+
+.box {
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	display:inline-block;
+	position: static;
+	margin: 20px 20px 20px 20px;
+	border:solid;
+	border-color:black;
+
+}
+
+#greenDiv {
+	background-color: green;
+	position:relative;
+}
+
+#redDiv {
+	background-color: red;
+	position:relative;
+
+}
+
+#blueDiv {
+	background-color: blue;
+	position:relative;
+
+}
+
+#blackDiv {
+	background-color: black;
+	position:relative;
+	color:white;
+
+}
+
+#purpleDiv{
+	background-color: purple;
+	position:relative;
+}
+
+#orangeDiv{
+	background-color: orange;
+	position:relative;
+}
+
+.hidden {
+	display: none;
+}
+
+.shown {
+	display:relative;
+}
+
+.important {
+	display: inline-flex;
+	width:800px;
+	height:800px;
+	border: dashed;
+}
+
+p {
+	width:100px;
+	height:100px;
+	overflow: hidden;
+	background-color:inherit;
+	display:inherit;
+}
+
+h3 {
+	background-color:inherit;
+	width:95%;
+	height:95%;
+}
+
+.xButton {
+	vertical-align: text-top;
+	width:20px;
+	height:20px;
+	border-radius:20px;
+	position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    display:none;
+    border:solid;
+
+}
+div {
+	background-color: inherit;
 }
